@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PTI</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link  rel="stylesheet" href="styleCV.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+	<div class="bloc-gauche">
+		<div class="champ-recherche">
+			<input type="text" class="recherche-input">
+			<button class="recherche-bouton">Rechercher</button>
+		</div>
+		<div class="champ-recherche">
+			<label class="tri-label">Trier par</label>
+			<select class="tri-input">
+				<option>Dates test déroissantes</option>
+			    <option>Dates test croissantes</option>
+			    <option>ID test croissants</option>
+			    <option>ID patient croissants</option>
+			    <option>Noms ordre alphabétique</option>
+			    <option>Dates de naissance déroissantes</option>
+			    <option>Dates de naissance croissantes</option>
+		    </select>
+		</div>
+		<div class="champ-menu">
+			<table class="menu">
+			  <thead>
+			    <tr>
+			    	<td>ID test</td>
+					<td>Date analyse</td>
+					<td>ID patient</td>
+					<td>Nom</td>
+					<td>Date de naissance</td>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+				    <td>37856</td>
+				    <td>22/03/2021</td>
+				    <td>65468</td>
+				    <td>DUPOND Didier</td>
+				    <td>21/12/1943</td>
+				<tr>
+				    <td>67364</td>
+				    <td>15/03/2021</td>
+				    <td>93425</td>
+				    <td>VANDENBERG Sofie</td>
+				    <td>19/06/1957</td>
+				</tr>
+				<tr>
+				    <td>34287</td>
+				    <td>26/02/2021</td>
+				    <td>56428</td>
+				    <td>ABSIL Marine</td>
+				    <td>08/01/1961</td>
+				</tr>
+				<tr>
+				    <td>24561</td>
+				    <td>18/03/2021</td>
+				    <td>87185</td>
+				    <td>DELECLUSE Patrick</td>
+				    <td>29/05/1947</td>
+				</tr>
+				<tr>
+				    <td>74733</td>
+				    <td>03/03/2021</td>
+				    <td>82225</td>
+				    <td>CONRARDY Jacques</td>
+				    <td>11/09/1939</td>
+				</tr>
+				<tr>
+				    <td>70097</td>
+				    <td>18/04/2021</td>
+				    <td>80453</td>
+				    <td>MARCHAND David</td>
+				    <td>29/03/1949</td>
+				</tr>
+				<tr>
+				    <td>54545</td>
+				    <td>03/04/2021</td>
+				    <td>32323</td>
+				    <td>ZHOU Perrine</td>
+				    <td>11/11/1943</td>
+				</tr>
+			  </tbody>
+			</table>
+		</div>
+	</div>
+	<div class="bloc-droit">
+		<div class="bloc-patient">
+			<p>ID patient : 984126</p>
+			<p>Nom : Didier Dupond</p>
+			<p>Date de naissance: 21/12/1943</p>
+			<p>Sexe : M</p>
+		</div>
+		<div class="bloc-test">
+			<p>ID test: 37856</p>
+			<p>Date examen : 21/03/2021</p>
+			<p>Date analyse : 22/03/2021</p>
+			<p>IA Version: 0.0</p>
+		</div>
+		<img class="hypnogramme" src = "images/visualisation.png"></img>
+		<div class="bloc-txt">
+			<p>Résultat : Positif</p>
+			<p>Certitude : 78%</p>
+		</div>
+		<button class="bouton-large" onclick="window.open('download/rapport.pdf')" >Rapport</button>
+	</div>
+	<img class="logo" src = "images/logos.png"> </img>
+	<div class="bloc-gauche">
+		<div class="champ-recherche">
+			<label class="diagnostic-label">Diagnostic final</label>
+			<select class="diagnostic-input">
+				<option>Inconnu</option>	
+				<option>Positif</option>
+				<option>Négatif</option>
+			</select>
+			<button class="envoyer-bouton">Envoyer</button>
+			</div>
+			<button class="bouton-large" onclick="window.location.href = 'drop.html'">Réanalyser</button>
+
+	</div>
+	<div class="bloc-gauche">
+		<button class="bouton-large" onclick="window.location.href = 'drop.html'">Retour</button>
+	</div>
+</body>
+</html>
